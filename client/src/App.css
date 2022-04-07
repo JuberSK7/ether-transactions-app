@@ -1,0 +1,105 @@
+.App {
+ 
+ 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+.App_Container {
+box-shadow: 5px 10px #c0bdbd;
+border-radius:  15px;
+background-color: #D5D8DC;
+margin: 32px;
+height: 400px;
+width: 400px;
+
+}
+h1 {
+  font-size: 22px;
+  text-transform: capitalize;
+  margin: 24px;
+}
+.fa-wallet {
+  color: #D35400;
+  font-size: 28px;
+}
+.button {
+ margin-top: 84px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #154360;
+  font-size: 1rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: .2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+  .button::after {
+    background-color: #F1C40F  ;
+    border-radius: 1rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+  .button:hover::after{
+    transform: translate(0, 0);
+  }
+  .button:hover{
+    border: 2px solid transparent;
+    color: indigo;
+    transform: scale(1.05);
+    will-change: transform;
+  }
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
